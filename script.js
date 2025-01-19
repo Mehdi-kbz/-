@@ -69,7 +69,7 @@ ScrollReveal().reveal('.event', { origin: 'top' });
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
-  strings: ['IT security Engineering student.', 'Private tutor.'],
+  strings: ['IT Engineering Student.', 'Private tutor.'],
   typeSpeed: 70, 
   backSpeed: 50, 
   backDelay: 500,
