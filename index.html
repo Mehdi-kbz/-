@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehdi's Portfolio
+    </title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+<body>
+
+
+<!-- header design -->
+<header class="header">
+      <a href="#" class="logo">M<span> K</span></a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+    
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>     
+       <img id="moon-icon" src="images/moon.png" alt="Moon Icon">
+
+    </header>
+    
+<!-- home section design -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Hello, it's me,</h3>
+    <h1>Mehdi Khabouze</h1>
+    <h3>And I'm a <span class="multiple-text"></span></h3>
+    <p>I'm looking for a 4-month internship in AI or Cybersecurity, starting in April/May 2025. I bring a strong academic foundation paired with hands-on experience, enabling me to contribute to innovative projects while further refining my skill set. I am also open to exploring related opportunities.</p>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/mehdikhabouze" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="mailto:khabouzemehdi@outlook.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+    </div>
+    <a href="#" class="btn" onclick="downloadPdf()" >Download CV</a>
+  </div>
+
+
+  <div class="home-img">
+    <img src="images/Photo_CV.png" alt="">
+  </div>
+</section>
+
+<!-- Projects section design -->
+<section class="projects-section" id="projects">
+  <h2 class="heading"> My <span>Projects</span></h2>
+  <p class="section-desc">
+    Below are some of my key projects. Each card provides a short description, click <span> See More </span>to explore details on its dedicated page.
+  </p>
+
+  <div class="projects-grid">
+    <!-- Project 1: Pac-Man -->
+    <div class="project-card">
+      <img 
+        src="images/pacman.png" 
+        alt="Pac-Man Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Pac-Man</h3>
+        <p>
+          An interactive game built with SDL2 on macOS. 
+          A custom Pac-Man remake featuring keyboard input 
+          and smooth animations.
+        </p>
+        <a href="https://github.com/Mehdi-kbz/PacMan" class="project-button">See More</a>
+        <a href="projects/pacman.pdf" class="project-button">🇫🇷 Download Report</a>
+        <!-- Single language bubble -->
+        <div class="lang-bubbles">
+          <div class="lang-bubble">C</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Vie de l’ENSEIRB -->
+    <div class="project-card">
+      <img 
+        src="images/forum.png" 
+        alt="Vie de l’ENSEIRB Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Vie de l’ENSEIRB</h3>        
+        <p> A website inspired by "viedemerde.fr" with dynamic content management powered by a robust front-end and back-end integration. </p>
+        <a href="https://github.com/Mehdi-kbz/Vie-de-l-Enseirb" class="project-button">See More</a>
+        <a href="projects/vie.pdf" class="project-button">🇫🇷 Download Report</a>
+
+        <!-- Multiple bubbles -->
+        <div class="lang-bubbles">
+          <div class="lang-bubble">PHP</div>
+          <div class="lang-bubble">JS</div>
+          <div class="lang-bubble">SQL</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Real-Time Aircraft Tracking -->
+    <div class="project-card">
+      <img 
+        src="images/radar.png" 
+        alt="Aircraft Tracking Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Real-Time Aircraft Tracking</h3>
+        <p>
+          An application that processes ADS-B signals to 
+          track flights using MATLAB. Captures data from 
+          an on-site antenna for real-time visualization.
+        </p>
+        <a href="https://github.com/Mehdi-kbz/AircraftTracking" class="project-button">See More</a>
+        <a href="projects/adsb.pdf" class="project-button">🇫🇷 Download Report</a>
+
+        <div class="lang-bubbles">
+          <div class="lang-bubble">MATLAB</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4: Multi-User Chat -->
+    <div class="project-card">
+      <img 
+        src="images/chat.png" 
+        alt="Chat App Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Multi-User Chat</h3>
+        <p>
+          A real-time messaging platform built on sockets 
+          for network connections. Allows multiple users 
+          to exchange messages simultaneously.
+        </p>
+        <a href="chat-c.html" class="project-button">See More</a>
+        <div class="lang-bubbles">
+          <div class="lang-bubble">C</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5: DSM Software -->
+    <div class="project-card">
+      <img 
+        src="images/deployment.png" 
+        alt="DSM Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>DSM Software</h3>
+        <p>
+          Shared memory access with dynamic 
+          page transfers across machines on a network. 
+          user rights management and 
+          inter-process communication.
+        </p>
+        <a href="https://github.com/Mehdi-kbz/DSM-Software" class="project-button">See More</a>
+        <a href="projects/ProgSys.pdf" class="project-button">🇫🇷 Download Report</a>
+        <div class="lang-bubbles">
+          <div class="lang-bubble">C</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6: Barcode Detection -->
+    <div class="project-card">
+      <img 
+        src="images/barcode.png" 
+        alt="Barcode Detection Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Barcode Detection</h3>
+        <p>
+          An image-processing application that analyzes and 
+          recognizes barcodes, storing and retrieving data 
+          from a dedicated database.
+        </p>
+        <a href="https://github.com/Mehdi-kbz/Barcode-Detection-App" class="project-button">See More</a>
+        <a href="projects/barcode.pdf" class="project-button">🇫🇷 Download Report</a>
+
+        <div class="lang-bubbles">
+          <div class="lang-bubble">Python</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 7: Schotten Totten -->
+    <div class="project-card">
+      <img 
+        src="images/card.png" 
+        alt="Schotten Totten Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Schotten Totten</h3>
+        <p>
+          A strategic card game featuring AI opponents and full rule management, with multiple gameplay modes.
+        </p>
+
+        <a href="https://github.com/Mehdi-kbz/SchottenTotten" class="project-button">See More</a>
+        <a href="projects/schottentotten.pdf" class="project-button">🇫🇷 Download Report</a>
+
+        <div class="lang-bubbles">
+          <div class="lang-bubble">Java</div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Project 7bis: 12 IA -->
+     <div class="project-card">
+      <img 
+        src="images/12ia.png" 
+        alt="12ia Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>12 IA</h3>
+        <p>
+          A luxury apparel French e-commerce website, featuring timeless ready-to-wear collections. <a href="https://12ia.fr" target="_blank">12ia.fr</a>
+        </p>
+
+        <a href="https://www.12ia.fr" class="project-button">See More</a>
+        <div class="lang-bubbles">
+          <div class="lang-bubble">PHP</div>
+          <div class="lang-bubble">SQL</div>
+          <div class="lang-bubble">Shopify</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 8: Signal Classification -->
+    <div class="project-card">
+      <img 
+        src="images/classification.png" 
+        alt="Signal Classification Icon" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Signal Classification App</h3>
+        <p>
+          Processes various signals (like ECG) with MATLAB and Python, leveraging DFA for pattern detection and classification.
+        </p>
+        <a href="https://github.com/Mehdi-kbz/Signal-Classification-App" class="project-button">See More</a>
+        <a href="projects/classification.pdf" class="project-button">🇫🇷 Download Report</a>
+
+        <!-- Example of two bubbles for multiple languages -->
+        <div class="lang-bubbles">
+          <div class="lang-bubble">MATLAB</div>
+          <div class="lang-bubble">Python</div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Project 9: Piezo -->
+     <div class="project-card">
+      <img 
+        src="images/dalles.png" 
+        alt="piezo image" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Piezoelectric Panels</h3>
+        <p>
+          Design, Modeling, and Optimization of a Piezoelectric Panel from A to Z, converting mechanical vibrations from steps into electrical energy to address the challenge of energy scarcity.
+        </p>
+        <a href="projects/Mcot_10006.pdf" class="project-button">🇫🇷 Download MCOT</a>
+        <a href="projects/presentation.pdf" class="project-button">🇫🇷 Download Presentation</a>
+
+        <!-- Example of two bubbles for multiple languages -->
+      </div>
+    </div>
+
+    <!-- Project 10: PZ -->
+    <div class="project-card">
+      <img 
+        src="images/Logo_Prepa_Zone.png" 
+        alt="prepa zone image" 
+        class="project-icon"
+      />
+      <div class="card-content">
+        <h3>Prepa Zone (in Progress)</h3>
+        <p> An online platform offering tailored courses, exercises, and expert guidance to help preparatory students excel in exams for elite engineering schools.</p>
+        <a href="https://prepa-zone.com/" class="project-button">See More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+ <!-- About Section -->
+ <section class="about" id="about">
+  <div class="about-content">
+    <h2 class="heading"><span>Me</span> & my <span>Skills</span></h2>
+    <p>
+      🌍 My journey spans 21 years across 🇩🇪 <strong>Germany</strong>, 🇲🇦 <strong>Morocco</strong>, and now 🇫🇷 <strong>France</strong>, shaping my adaptability and global outlook.  
+    </p>
+    <p>
+      💻 I’m passionate about <strong>technology</strong>, 🚗 <strong>automotive innovation</strong>, and the synergy between 🌟 <strong>business and finance</strong>, which constantly inspires me.
+    </p>
+    <p>
+      🎓 With a multicultural background and a commitment to <strong>innovation</strong>, I chose <strong>engineering</strong> to explore dynamic fields and contribute to cutting-edge advancements.
+    </p>
+    <p><strong>⚡ Technical kills:</strong></p>
+    
+
+
+    <div class="inner">
+      <div class="container">
+        <!-- Skill 1 -->
+        <div class="skill-box">
+          <img src="images/c.svg" alt="C">
+          <h1>C</h1>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/java.png" alt="Java">
+          <h1>Java</h1>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-box">
+          <img src="images/python.png" alt="Python">
+          <h1>Python</h1>
+        </div>
+
+        <div class="skill-box">
+          <img src="images/matlab.png" alt="matlab">
+          <h1>MATLAB</h1>
+        </div>
+
+
+        <!-- Skill 3 -->
+        <div class="skill-box">
+          <img src="images/php.png" alt="PHP">
+          <h1>PHP</h1>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-box">
+          <img src="images/sql-server-black.png" alt="SQL">
+          <h1>SQL</h1>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-box">
+          <img src="images/html-5.png" alt="HTML">
+          <h1>HTML</h1>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-box">
+          <img src="images/js.png" alt="JavaScript">
+          <h1>JavaScript</h1>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-box">
+          <img src="images/css-3.png" alt="CSS">
+          <h1>CSS</h1>
+        </div>
+
+        <!-- Skill 8 -->
+        <div class="skill-box">
+          <img src="images/wordpress.png" alt="WordPress">
+          <h1>WordPress</h1>
+        </div>
+
+        <!-- Skill 9 -->
+        <div class="skill-box">
+          <img src="images/shopify.png" alt="shopify">
+          <h1>Shopify</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="languages">
+    <p><strong>Languages:</strong></p>
+
+    <ul class="languages-list">
+      <!-- Language 1 -->
+      <li class="language-item">
+        <div class="language-img">
+          <img src="images/germany.png" alt="German Flag">
+        </div>
+        <div class="language-details">
+          <h1>Deutsch</h1>
+          <p>(A2)</p>
+        </div>
+      </li>
+  
+      <!-- Language 2 -->
+      <li class="language-item">
+        <div class="language-img">
+          <img src="images/uk.png" alt="UK Flag">
+        </div>
+        <div class="language-details">
+          <h1>English</h1>
+          <p>(C1 - TOEIC 975/990)</p>
+        </div>
+      </li>
+  
+      <!-- Language 3 -->
+      <li class="language-item">
+        <div class="language-img">
+          <img src="images/arabic-black.png" alt="Arabic Flag">
+        </div>
+        <div class="language-details">
+          <h1>Arabic</h1>
+          <p>(C1)</p>
+        </div>
+      </li>
+  
+      <!-- Language 4 -->
+      <li class="language-item">
+        <div class="language-img">
+          <img src="images/france.png" alt="French Flag">
+        </div>
+        <div class="language-details">
+          <h1>French</h1>
+          <p>(C1)</p>
+        </div>
+      </li>
+  
+      <!-- Language 5 -->
+      <li class="language-item">
+        <div class="language-img">
+          <img src="images/spain.png" alt="Spanish Flag">
+        </div>
+        <div class="language-details">
+          <h1>Spanish</h1>
+          <p>(A1)</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- work timeline section design -->
+<section class="work-timeline">
+  <h1 class="heading">Work <span>Experience</span></h1>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>
+        Intern in Security and Networks
+        <span class="date">May 2024 - August 2024</span>
+      </h3>
+      <p>Moroccan Pension Fund | Rabat, Morocco</p>
+      <ul>
+        <li>Created a secure portal for 200+ visitors/month.</li>
+        <li>Provisioned guest access using Aruba.</li>
+        <li>Real-time traffic monitoring interface.</li>
+      </ul>
+      <img src="images/cmr.png" alt="Intern Icon" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Junior Consultant
+        <span class="date">January 2024 - Present</span>
+      </h3>
+      <p>Aquitaine Electronics and Computing | Bordeaux, France</p>
+      <ul>
+        <li>Designed and implemented solutions for various companies.</li>
+        <li>Project management, collaboration, creativity, and adaptability.</li>
+      </ul>
+      <img src="images/aei.png" alt="Consultant Icon" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Founder of Prepa Zone
+        <span class="date">2023 - Present</span>
+      </h3>
+      <p>E-learning site: prepa-zone.com | International</p>
+      <ul>
+        <li>Managed marketing and financial strategies.</li>
+        <li>Full development (UX/UI, SEO, security, etc.).</li>
+        <li>Training and recruitment.</li>
+      </ul>
+      <img src="images/pz.webp" alt="Founder Icon" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Private Tutor
+        <span class="date">2021 - Present</span>
+      </h3>
+      <p>Mathematics, Computer Science, Physics-Chemistry | International</p>
+      <ul>
+        <li>Academic support and mentoring for CPGE, universities, and high schools.</li>
+        <li>Effective methodology, pedagogy, and communication.</li>
+        <li>Exam preparation techniques.</li>
+        <li>Partnership with Complétude Bordeaux and Myschool Maroc.</li>
+      </ul>
+      <img src="images/completude.png" alt="Tutor Icon" class="timeline-img">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- education timeline section design -->
+
+<section class="work-timeline">
+  <h1 class="heading">My <span>Education</span></h1>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>
+        IT Security Engineering
+        <span class="date">Sep 2023 - Feb 2026</span>
+      </h3>
+      <p>Enseirb-Matmeca Bordeaux INP| Bordeaux, France</p>
+      <ul>
+        <li>Master's degree (BAC+5) accredited by the Commission des Titres d’Ingénieur (CTI) with the EUR-ACE label.</li>
+        <li>Minimum 17 weeks of international mobility.</li>
+        <li>Four pillars: computer science, networks, digital communications, and signal and image processing.</li>
+      </ul>
+      <img src="images/logo_em.svg" alt="EM logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Bachelor in Engineering Sciences
+        <span class="date">Sep 2023 - June 2024</span>
+      </h3>
+      <p>Enseirb-Matmeca Bordeaux INP| Bordeaux, France</p>
+      <ul>
+        <li>Bachelor's degree (BAC+3) with the EUR-ACE label.</li>
+        <li>Minimum 17 weeks of international mobility.</li>
+        <li>Four pillars: computer science, networks, digital communications, and signal and image processing.</li>
+      </ul>
+      <img src="images/logo_em.svg" alt="EM logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Student in Preparatory Classes (CPGE)
+        <span class="date">Sep 2021 - July 2023</span>
+      </h3>
+      <p>Lycée Moulay Youssef | Rabat, Morocco</p>
+      <ul>
+        <li>Most prestigious public preparatory class in the Kingdom.</li>
+        <li>Intensive programs in Mathematics, Physics-Chemistry, Computer Science, and Engineering Sciences.</li>
+        <li>MPSI (Mathematics, Physics, and Engineering Sciences) stream, followed by MP* (advanced mathematics and physics).</li>
+        <li>Skills in French philosophy and languages.</li>
+      
+      </ul>
+      <img src="images/ministere.png" alt="cpge logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        High School Diploma in Mathematics B
+        <span class="date">Sep 2019 – June 2021</span>
+      </h3>
+      <p>Lycée Madariss Maria | Rabat, Morocco</p>
+      <ul>
+        <li>Graduated with Honors (17.5/20).</li>
+        <li>Mathematics, Physics-Chemistry, and Engineering Sciences.</li>
+      </ul>
+      <img src="images/maria.png" alt="maria" class="timeline-img">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Certificates timeline section design -->
+
+<section class="work-timeline">
+  <h1 class="heading">My <span>certifications</span></h1>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>
+          CompTIA Network
+        <span class="date">Mai 2024 - July 2024</span>
+      </h3>
+      <p>CompTIA</p>
+      <ul>
+        <li>This certification validates essential networking skills and knowledge, covering areas such as network design, configuration, troubleshooting, and security. It emphasizes foundational concepts, including network protocols, hardware, and connectivity, while also addressing cloud and virtualization technologies. Designed for IT professionals, it equips candidates with the expertise needed to manage and maintain modern network infrastructures effectively and securely.</li>
+         </ul>
+      <a href="https://www.coursera.org/account/accomplishments/verify/L8DMRP24GRXG" class="project-button">View certificate</a> 
+      <img src="images/comptia_logo.jpeg" alt="comptia logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Supervised Machine Learning
+        <span class="date">Dec 2023 - Feb 2024</span>
+      </h3>
+      <p>Stanford University x DeeplearningAI</p>
+      <ul>
+        <li>This certificate focuses on foundational techniques in supervised machine learning, emphasizing the development and application of regression and classification models. It covers essential concepts such as feature engineering, model evaluation, and performance optimization, enabling learners to analyze data, make accurate predictions, and solve real-world problems effectively. The program integrates practical exercises and tools to build a solid understanding of machine learning workflows and best practices.</li>
+        </ul>
+        <a href="https://coursera.org/verify/K96CQZ5G276N" class="project-button">View certificate</a> 
+      <img src="images/stanford.jpeg" alt="stanford logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        Fundamentals of Network Communication
+        <span class="date">Sep 2023 - Nov 2023</span>
+      </h3>
+      <p>University of Colorado</p>
+      <ul>
+        <li>This certificate provides a comprehensive introduction to the principles of network communication, covering key concepts such as data transmission, network protocols, and the architecture of modern communication systems. It explores the foundational elements of networking, including IP addressing, routing, and the role of layers in the OSI and TCP/IP models. The program emphasizes practical understanding, equipping learners with the knowledge to analyze and optimize network performance and troubleshoot common connectivity issues.</li>
+      </ul>
+      <a href="https://www.coursera.org/account/accomplishments/certificate/AR2MNWTRKFZQ" class="project-button">View certificate</a> 
+      <img src="images/colorado.jpeg" alt="colorado logo" class="timeline-img">
+    </div>
+
+    <div class="timeline-item">
+      <h3>
+        CS50 programming with python
+        <span class="date">July 2023 – Aug 2023</span>
+      </h3>
+      <p>Harvard University</p>
+      <ul>
+        <li>This certificate provides a comprehensive introduction to programming using Python, focusing on core concepts such as functions, loops, conditionals, and data structures like lists and dictionaries. It emphasizes problem-solving and computational thinking while incorporating practical applications such as web scraping, file handling, and data analysis. The program is designed to build foundational programming skills, enabling learners to write efficient, readable, and maintainable Python code for a variety of real-world tasks.</li>
+      </ul>
+      <a href="https://certificates.cs50.io/00456438-b8b3-4cfc-8732-8062fccab362.pdf?size=letter" class="project-button">View certificate</a> 
+      <img src="images/harvard.jpeg" alt="harvard logo" class="timeline-img">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- contact section design -->
+<section class="contact-section" id="contact">
+  <div class="contact">
+    <h2>
+      <div class="heading">Contact <span>Me</span></div>
+    </h2>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/mehdikhabouze" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="mailto:khabouzemehdi@outlook.com" target="_blank">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://github.com/Mehdi-kbz" target="_blank">
+        <i class='bx bxl-github'></i> <!-- GitHub icon -->
+      </a>
+    </div>
+  </div>
+</section>
+ 
+    
+
+<!-- footer design -->
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &copy; 2023 by Khabouze Mehdi | All rights reserved.</p>
+  </div>
+<div class="footer-iconTop">
+  <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+</div>
+</footer>
+   
+
+<!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- custom js -->
+    <script src="script.js"></script>
+
+
+    
+  </body>
+</html>
+
+
