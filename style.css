@@ -776,7 +776,7 @@ body.dark-mode #sql-icon {
   transform: scale(1.1); /* Slight zoom on hover */
 }
 
-@media (max-width: 6700px) {
+@media (max-width: 600px) {
   .timeline-item {
     flex-direction: column; /* Stack text and image vertically on small screens */
     align-items: flex-start;
