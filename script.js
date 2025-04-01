@@ -78,7 +78,6 @@ const typed = new Typed('.multiple-text', {
 });
 
 
-
 /*==================== dark mode ====================*/
 const moonIcon = document.getElementById('moon-icon');
 const body = document.body;
